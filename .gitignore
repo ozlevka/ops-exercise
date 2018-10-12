@@ -58,7 +58,7 @@ typings/
 .env
 
 # PyCharm ignore
-.idea/
+.idea/*
 
 #App specific data
 public/images/
