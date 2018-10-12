@@ -60,3 +60,6 @@ typings/
 # PyCharm ignore
 .idea/
 
+#App specific data
+public/images/
+

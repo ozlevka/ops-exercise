@@ -12,6 +12,8 @@ services:
        - db
      depends_on:
        - db
+     volumes:
+       - ./images:/opt/app/public/images
 
    db:
      build: "../db/"
