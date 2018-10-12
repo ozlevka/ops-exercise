@@ -1,0 +1,22 @@
+version: "3.4"
+
+
+services:
+   app:
+     build: "../"
+     networks:
+       - default
+     ports:
+      - 3000:3000
+     links:
+       - db
+     depends_on:
+       - db
+     volumes:
+       - ./images:/opt/app/public/images
+
+   db:
+     build: "../db/"
+     networks:
+       - default
+
